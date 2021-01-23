@@ -1,0 +1,11 @@
+name: vaizz-bot-chat
+desc: virtual asisstant for ordering pizza
+timezone: 7
+flows:
+    fallback: $include(./flows/fallback.yml)
+    order: $include(./flows/order.yml)
+    faq: $include(./flows/faq.yml)
+config: $include(./config.yml)
+nlus: $include(./nlus.yml)
+methods: {}
+tag: null

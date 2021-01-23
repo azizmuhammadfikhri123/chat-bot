@@ -1,0 +1,18 @@
+#config ini adalah untuk konfigurasi-konfigurasi chatbot yang akan dipakai, con: nama chatbot, base url api, customize error/timeout message dll
+botDisplayName: Vaizza #konfigurasi nama chatbot
+faqs: #topik untuk faq
+    website:
+        title: 'Apa pizza indonesia punya website?'
+        desc: 'Faiz informasikan untuk website pizza indonesia kamu bisa akses di https://www.phd.co.id/'
+    outlet:
+        title: 'Dimana sajakah outlet pizza indonesia?'
+        desc: 'PI saat ini sudah hadir di wilayah JABODETABEK, Cikampek, Purwakarta, Bandung, Cimahi, Serang, Sumedang, Cirebon, Sukabumi, Cilegon, Tulungagung, Kediri, Malang, Surabaya, Gresik, Sidoarjo, Probolinggo, Jember, Medan, Palembang, Pekanbaru, Batam, Jambi, Padang, Samarinda, Balikpapan, Makassar, Manado, Purwokerto, Pekalongan, Semarang, Magelang, Yogyakarta, Solo dan Kudus'      
+    jobvacancy:
+        title: 'Bagaimana jika ingin bertanya seputar lowongan pekerjaan?'
+        desc: 'Untuk lowongan pekerjaan di Pizza Indonesia dapat datang langsung ke outlet terdekat atau bisa kirimkan CV melalui email ke career@pizzaindonesia.co.id'
+    promo:
+        title: 'Apa ada promo?'
+        desc: 'Untuk promo bulan ini kami hanya mengeluarkan promo untuk pemesanan offline, silahkan tunggu promo menarik lainnya! :)'
+    payment:
+        title: 'Apa saja metode pembayaran yang dapat digunakan?'
+        desc: 'Melalui website, kamu dapat membayar pesanan melalui dua cara yaitu Online Payment dan Payment on Delivery. Online Payment terdiri dari Credit Card, Doku Wallets dan BCA Virtual Account. Sedangkan, Payment on Delivery yaitu pembayaran melalui Delivery Man yang mengantarkan jika kamu memilih layanan Delivery yaitu terdiri dari Swipe on Delivery melalui mesin EDC dan pembayaran secara cash'

@@ -1,0 +1,56 @@
+#nlus ini kumpulan dari nlu (natural language understanding) 
+#nlu (natural language understanding) dibuat agar sistem mengerti bahasa/informasi yang kita masukan 
+vaizza-nl: #nama nlu (natural language understanding)
+    type: nl #type nl karena nlu diambil dari nl studio di platform Kata.ai
+    options: 
+        nluId: reta:vaizza-bot #konfigurasi yang ada di settings nl studio
+        token: bcabd1e4-f5f2-46a3-ac0c-6ac91d7da433 #konfigurasi yang ada di settings nl studio
+        output: value
+        threshold: 0.6 #set untuk predict, apa bila suatu kata/kalimat hasil predict nya lebih dari threshold berarti kata/kalimat tersebut sudah terdetect/dimengerti chatbot. Apabila dibawah, maka kita harus training kembali kata/kalimat tersebut
+        flatten: true
+
+vaizza-kata: #nama nlu (natural language understanding)
+    type: nl #type nl karena nlu diambil dari nl studio di platform Kata.ai
+    options: 
+        nluId: reta:vaizza-bot #konfigurasi yang ada di settings nl studio
+        token: bcabd1e4-f5f2-46a3-ac0c-6ac91d7da433 #konfigurasi yang ada di settings nl studio
+        output: value
+        threshold: 0.6 #set untuk predict, apa bila suatu kata/kalimat hasil predict nya lebih dari threshold berarti kata/kalimat tersebut sudah terdetect/dimengerti chatbot. Apabila dibawah, maka kita harus training kembali kata/kalimat tersebut
+        entity: kata
+
+order: #nama nlu (natural language understanding)
+    type: keyword #type keywords karena kita set sendiri keywords dan label yang kita inginkan/perlukan
+    options:
+        keywords: 
+            orderKey: #keyword
+                - pesan #label
+                - order
+                - beli 
+
+quantity: #nama nlu (natural language understanding)
+    type: regex #regex = regular expression
+    options:
+        regex: \d+ #karakter range 1-9
+
+yesno: #nama nlu (natural language understanding)
+    type: keyword #type keywords karena kita set sendiri keywords dan label yang kita inginkan/perlukan
+    options: 
+        keywords: 
+            'yes': #keyword
+                - 'yes' #label
+                - iya
+                - oke
+            'no': #keyword
+                - tidak #label
+                - 'no'
+                - g
+                - gamau
+
+cancel_nlu: #nama nlu (natural language understanding)
+    type: keyword #type keywords karena kita set sendiri keywords dan label yang kita inginkan/perlukan
+    options:
+        keywords:
+            cancel: #keyword
+                - cancel #label
+                - batal
+                - gajadi
